@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @media (max-width: 500px) {
+        #game #nav {
+          font-size: 8px;
+          height: 10%;
+          border-radius: 0px 0px 30px 30px;
+        }
+        #game #bubbles {
+          height: 80%;
+        }
+        #game #nav i {
+          margin-left: 0px;
+          font-size: 15px;
+        }
+        #game #nav .box {
+          height: 25px;
+          width: 40px;
+          font-size: 16px;
+          margin-left: 0px;
+        }
+        #game #bubbles #bubble {
+          height: 45px;
+          width: 45px;
+          font-size: 25px;
+          margin: 5px;
+        }
+        #game #control #retry {
+          font-size: 15px;
+          padding: 5px 30px;
+          background-color: brown;
+          color: antiquewhite;
+          border: 2px solid aliceblue;
+          border-radius: 10px;
+        }
+        #game #bubbles #scoreCard p {
+          margin-top: 30px;
+          font-size: 20px;
+        }
+        #game #bubbles #scoreCard h1 {
+          font-size: 80px;
+          margin-bottom: 30px;
+        }
+        #footer {
+          display: block;
+          text-align: center;
+          font-size: 10px;
+          padding: 3px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="game">
+        <div id="nav">
+          <div id="timer">
+            <h2>Time</h2>
+            <i class="ri-arrow-right-line"></i>
+            <div class="box"></div>
+          </div>
+          <div id="hit">
+            <h2>Hit</h2>
+            <i class="ri-arrow-right-line"></i>
+            <div class="box"></div>
+          </div>
+          <div id="score">
+            <h2>Score</h2>
+            <i class="ri-arrow-right-line"></i>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div id="bubbles"></div>
+        <div id="control">
+          <button id="retry">Retry</button>
+        </div>
+      </div>
+      <div id="footer">
+        <p>Copyright © Sheryians Coding School, Bhopal 2022. All Rights Reserved.</p>
+        <p>Designed, Developed & Maintained by Samarth Jain.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

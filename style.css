@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "28 days later";
+    src: url("fonts/28 Days Later.ttf");
+  }
+  @font-face {
+    font-family: "blackchancery";
+    src: url("fonts/BLKCHCRY.TTF");
+  }
+  @font-face {
+    font-family: "frock thin";
+    src: url("fonts/FrockThin-p7xZv.ttf");
+  }
+  @font-face {
+    font-family: "gist";
+    src: url("fonts/GistLight.otf");
+  }
+  @font-face {
+    font-family: "orange juice";
+    src: url("fonts/orange juice 2.0.ttf");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    background-color: rgb(252, 196, 124);
+}
+#game{
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    box-shadow: 2px 2px 20px black;
+}
+#game #nav{
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
+    height: 15%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "gist";
+    font-size: 15px;
+    color: antiquewhite;
+}
+#game #nav #timer, #game #nav #hit, #game #nav #score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#game #nav i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+#game #nav .box{
+    border: 2px solid black;
+    background-color: white;
+    height: 40px;
+    width: 70px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    font-family: "28 days later";
+}
+#game #bubbles{
+    width: 100%;
+    height: 75%;
+    background-color: blueviolet;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#game #bubbles #scoreCard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+}
+#game #bubbles #scoreCard h1{
+    font-size: 80px;
+}
+#game #bubbles #bubble{
+    height: 75px;
+    width: 75px;
+    border-radius: 30%;
+    background-color: yellow;
+    background-color: burlywood;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "orange juice";
+}
+#game #bubbles #bubble:hover{
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#game #bubbles #scoreCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#game #bubbles #scoreCard h1{
+    font-family: "blackchancery";
+    letter-spacing: 5px;
+    font-size: 100px;
+}
+#game #bubbles #scoreCard div{
+    width: 80%;
+    border: 2px solid black;
+    background-color: black;
+    margin: 30px 0px;
+    border-radius: 50px;
+}
+#game #bubbles #scoreCard p{
+    font-weight: 600;
+    font-family: "frock thin";
+}
+#game #control{
+    height: 10%;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+#game #control #retry{
+    font-size: 20px;
+    padding: 5px 40px;
+    background-color: brown;
+    color: antiquewhite;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+}
+#game #control #retry:hover{
+    background-color: bisque;
+    border: 2px solid antiquewhite;
+    color: brown;
+    cursor: pointer;
+}
+#footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(131, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "frock thin";
+    font-size: 15px;
+}
